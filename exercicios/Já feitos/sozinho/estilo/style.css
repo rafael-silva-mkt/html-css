@@ -1,0 +1,113 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'Android';
+    src: url('fontes/idroid.otf') format('truetype');
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--cor1);
+}
+
+/*---------------VARIAVEIS---------------*/
+
+:root{
+    --cor0:#4af8e7;
+    --cor1:#41BFB3;
+    --cor2:#9BF2EA;
+    --cor3:#275950;
+    --cor4:#260101;
+
+    --fonte-principal: Arial, Helvetica, sans-serif;
+    --fonte-secundaria: 'Bebas Neue';
+    --fonte-android: 'Android';
+}
+
+/*---------------FIM VARIAVEIS---------------*/
+
+/*---------------HEADER---------------*/
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor3));
+    font-family: var(--fonte-secundaria);
+}
+header > h1{
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+header > .p1{
+    text-align: center;
+    color: white;
+    padding: 15px 0px 0px 0px;
+}
+header > .p2{
+    text-align: center;
+    color: white;
+    padding: 0px 0px 15px 0px;
+}
+
+/*---------------FIM HEADER---------------*/
+
+/*---------------NAV---------------*/
+
+nav {
+    padding: 10px;
+}
+nav > a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+nav > a:hover{
+    text-decoration: underline;
+    background-color: var(--cor0);
+}
+
+/*---------------FIM NAV---------------*/
+
+/*---------------MAIN---------------*/
+
+main{
+    min-width: 250px;
+    max-width: 1000px;
+    background-color: white;
+    margin: auto;
+    padding: 15px;
+    text-indent: 15px;
+    font-family: var(--fonte-principal);
+}
+main > h1{
+    font-family: var(--fonte-android);
+    padding: 15px;
+    margin-left: 10px;
+}
+main > h2{
+    font-family: var(--fonte-android);
+    margin: 15px;
+    background-image: linear-gradient(to right, var(--cor3), white);
+    color: var(--cor4);
+}
+main > picture > img{
+    width: 100%;
+    margin: 15px;
+}
+main > p{
+    margin: 15px;
+}
+main > img{
+    display: block;
+    margin: auto;
+}
+main > .video > iframe{
+    min-width: 300px;
+    max-width: 800px;
+    margin: auto;
+    width: 100%;  
+}
+/*---------------FIM MAIN---------------*/
+

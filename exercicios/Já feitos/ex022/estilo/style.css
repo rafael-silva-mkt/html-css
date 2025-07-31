@@ -1,0 +1,204 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'Android';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*------------------VARIAVEIS------------------*/
+:root{
+    --cor0:#0FC2C0;
+    --cor1:#0CABA8;
+    --cor2:#008F8C;
+    --cor3:#015958;
+    --cor4:#023535;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue';
+    --fonte-android: 'Android';
+}
+
+/*------------------FIM VARIAVEIS------------------*/
+
+/*------------------BODY------------------*/
+
+body{
+    background-color: #0caba89d;
+    font-family: var(--fonte-padrao);
+}
+
+/*------------------FIM BODY------------------*/
+
+/*------------------HEADER------------------*/
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor4));
+    font-family: var(--fonte-destaque);
+    min-height: 150px;
+    text-align: center;
+}
+
+header > h1{
+    color: white;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.521);
+}
+header > p{
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+    padding: 0px 10px 20px 10px;
+    text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.479);
+}
+
+/*------------------FIM HEADER------------------*/
+
+/*------------------NAV------------------*/
+
+nav{
+    background-color: var(--cor4);
+    padding: 10px;
+    box-shadow: -1px 4px 20px 0px black;
+}
+nav > a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    transition-duration: 0.5s;
+    
+}
+nav > a:hover{
+    background-color: var(--cor1);
+    color: var(--cor4);
+    border-radius: 5px;
+}
+
+/*------------------FIM NAV------------------*/
+
+/*------------------MAIN------------------*/
+
+main{
+    background-color: white;
+    min-width: 250px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.527);
+    margin-bottom: 30px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+main > h1{
+    color: #023535;
+    font-family: var(--fonte-android);
+    padding-bottom: 15px;
+    font-weight: normal;
+}
+main > h2{
+    font-family: var(--fonte-android);
+    margin: 15px;
+    color: var(--cor4);
+    background-image: linear-gradient(to right, var(--cor1), white);
+    padding-left: 8px;
+    font-weight: normal;
+}
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.5em;
+}
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor4);
+    background-color: #13fcf8c0;
+    border-radius: 5px;
+    padding: 4px;
+}
+main a:hover{
+    text-decoration: underline;
+}
+main strong{
+    color: var(--cor4);
+    font-weight: bold; 
+}
+a.externo::after{
+    content: '\00A0\1F517';
+}
+div.video{
+    background-color: var(--cor3);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 58%;
+    position: relative;
+}
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+/*------------------FIM MAIN------------------*/
+
+/*------------------IMG------------------*/
+
+main img{
+    width: 100%;
+}
+main > .bug{
+    display: block;
+    max-width: 300px;
+    margin: auto;
+}
+
+/*------------------FIM IMG------------------*/
+
+/*------------------ASIDE------------------*/
+
+aside{
+    background-color: #308b8a62;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 1px 1px 6px black
+}
+aside > h3{
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -11px -11px 0px -11px;
+    border-radius: 10px 10px 0px 0px;
+}
+aside > ul{
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+li{
+    padding-left: 20px;
+}
+/*------------------FIM ASIDE------------------*/
+
+/*------------------FOOTER------------------*/
+
+footer{
+    background-color: var(--cor4);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/*------------------FIM FOOTER------------------*/

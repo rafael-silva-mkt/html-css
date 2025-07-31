@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+
+body {
+    background-color: darkgray;
+}
+h1{
+    background-color: rgb(87, 139, 87);
+    height: 300px;
+    width: 300px;
+    text-align: center;
+
+    /*-------------------------------------------*/
+    border: 10px solid darkgray; 
+    
+    /*-------------------------------------------*/
+    padding: 10px 10px 10px 10px; /* Considerar sequência de cima! */
+    /* Se informar apenas uma vez 10px, ele considera o mesmo para todos!*/
+    /* Modelo Simplificado "Shorthand" para padding */
+
+    /*-------------------------------------------*/
+    margin: 20px auto 40px auto; /* Considerar sequência de cima! */
+    /* Quando colocamos auto nas métricas laterais, o navegador centraliza */
+    /* Modelo Simplificado "Shorthand" para margin */
+
+    /*-------------------------------------------*/
+    outline: 5px solid black; /*Considerar sequência de cima! */
+    /* Modelo Simplificado "Shorthand" para outline */
+
+}
+a{
+    display: block;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+}
