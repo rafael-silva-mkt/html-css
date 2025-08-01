@@ -7,15 +7,27 @@
     <style>
         body{
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;*/
+
+            /* Shorthand - background
+                    
+             Sequência da Shorthand background: 
+             color > 
+                image >
+                    position >
+                        [size] >    
+                            repeat >                             
+                                 attachment*/
+            background: black url(imagens/wallpaper002.jpg) center center/cover no-repeat fixed;
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 300px;
             padding: 15px;
             margin: auto;
             border: 2px solid black;
@@ -26,6 +38,9 @@
 <body>
     <main>
         <h1>Teste de Imagem de fundo</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, ut itaque voluptatibus deleniti, quod obcaecati tempora saepe rem, ab velit dolores assumenda nesciunt sint alias? Numquam magnam non consectetur eveniet! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam nam voluptate doloribus et nemo, dicta assumenda obcaecati deserunt nobis quibusdam eveniet incidunt earum, corporis similique aliquid magni, asperiores quidem dolor? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem tempora perspiciatis magni expedita dolor quis. Ea aut nulla, illum laborum excepturi quaerat quia, tempora doloribus possimus quo aliquid aliquam porro?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, ut itaque voluptatibus deleniti, quod obcaecati tempora saepe rem, ab velit dolores assumenda nesciunt sint alias? Numquam magnam non consectetur eveniet! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam nam voluptate doloribus et nemo, dicta assumenda obcaecati deserunt nobis quibusdam eveniet incidunt earum, corporis similique aliquid magni, asperiores quidem dolor? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem tempora perspiciatis magni expedita dolor quis. Ea aut nulla, illum laborum excepturi quaerat quia, tempora doloribus possimus quo aliquid aliquam porro?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, ut itaque voluptatibus deleniti, quod obcaecati tempora saepe rem, ab velit dolores assumenda nesciunt sint alias? Numquam magnam non consectetur eveniet! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam nam voluptate doloribus et nemo, dicta assumenda obcaecati deserunt nobis quibusdam eveniet incidunt earum, corporis similique aliquid magni, asperiores quidem dolor? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem tempora perspiciatis magni expedita dolor quis. Ea aut nulla, illum laborum excepturi quaerat quia, tempora doloribus possimus quo aliquid aliquam porro?</p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, ut itaque voluptatibus deleniti, quod obcaecati tempora saepe rem, ab velit dolores assumenda nesciunt sint alias? Numquam magnam non consectetur eveniet! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam nam voluptate doloribus et nemo, dicta assumenda obcaecati deserunt nobis quibusdam eveniet incidunt earum, corporis similique aliquid magni, asperiores quidem dolor? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem tempora perspiciatis magni expedita dolor quis. Ea aut nulla, illum laborum excepturi quaerat quia, tempora doloribus possimus quo aliquid aliquam porro?</p>
     </main>
 </body>
