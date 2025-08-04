@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Filmes</title>
+    <style>
+        table{
+            background-color: lightgray;
+            width: 600px;
+            border: 2px solid black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption{
+            font-size: 2em;
+            border: 2px solid black;
+            background-color: rgba(0, 233, 241, 0.349);
+        }
+        th{
+            color: white;
+            padding: 20px;
+            background-color: rgb(75, 75, 75);
+            border: 1px solid black;
+        }
+        td{
+            border: 1px solid black;
+        }
+        .filme{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Filmes Favoritos</caption>
+        <thead>
+            <th scope="col">Grupo</th>
+            <th scope="col">Nomes</th>
+            <th scope="col" colspan="3">Filmes</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="2">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td class="filme">Alien</td>
+                <td class="filme">Rambo</td>
+                <td class="filme">Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td class="filme">Hulk</td>
+                <td class="filme">Inception</td>
+                <td class="filme">Batman</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Homens</th>
+                <td>Bruno Mendonça</td>
+                <td class="filme">Intocáveis</td>
+                <td class="filme">Amnésia</td>
+                <td class="filme">Gladiador</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td class="filme">Wall-E</td>
+                <td class="filme">Oldboy</td>
+                <td class="filme">Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td class="filme">Star Wars 5</td>
+                <td class="filme">Taxi Driver</td>
+                <td class="filme">Toy Story</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
