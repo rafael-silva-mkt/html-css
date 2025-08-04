@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container{
+            position: relative;
+            height: 500px;
+            background-color: purple;
+            padding: 5px;
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            
+        }
+        #conteudo{
+            position: absolute;
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            
+        }
+        /* Para centralizar os elementos, chamamos a tag <position> e o container, vai ter
+            uma posição relativa, enquanto o conteúdo terá uma posição absoluta. Quando
+            declaramos que um elemento tem uma posição absoluta, podemos utilizar duas propriedades
+            muito importantes. São elas: left e top <- que utilizamos as medidas de pixels  ou % 
+            para informar nosso valor. Left signifca que a distância que o conteúdo vai ter a partir 
+            da esquerda do container que criamos. O top significa a distância que o conteúdo vai ter a 
+            partir do topo do container que criamos.*/
+            
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
