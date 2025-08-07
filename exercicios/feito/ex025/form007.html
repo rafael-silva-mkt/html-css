@@ -6,6 +6,53 @@
     <title>Formulário</title>
 </head>
 <body>
-    
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="iest">Estado:</label>
+            <!-- Primeiro criamos nosso label com for = ao id do select.
+                A tag <select> vai englobar uma caixa onde o usuário poderá escolher todas as opções
+                que configurarmos dentro da nossa tag <select>. Dessa forma ele vai retornar o "value" conforme 
+                configuramos dentro da nossa <option> Caso seja necessário criar grupos para cada tipo de option, devemos
+                envelopar essas opções com <optgroup>. 
+            -->
+            <select name="estado" id="iest">
+                <option value="" selected>-----ESCOLHA-----</option>
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <optgroup>
+                    <option >Administrador</option>
+                    <option >Contabilista</option>
+                </optgroup>
+                <optgroup>
+                    <option >Desenvolvedor</option>
+                    <option >Professor</option>
+                </optgroup>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem:</label> <br>
+            <textarea name="msg" id="imsg" cols="50" rows="10" style="resize: none;" placeholder="Sua Mensagem Aqui..."></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
 </html>

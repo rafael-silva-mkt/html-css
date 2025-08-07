@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Testando tudo que aprendi</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" autocomplete="name" minlength="4" maxlength="20" placeholder="NomeCompleto" requeired>
+            </p>
+
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" required placeholder="E-mail profissional" size="30">
+            </p>
+
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" required placeholder="(XX)XXXXX-XXXX" pattern="^\(d{2}\)\d{4,5} - \d{4}$">
+            </p>
+
+            <p>
+                <label for="iage">Idade:</label>
+                <input type="number" name="age" id="iage" min="18" max="120" placeholder="Idade..." step="1" value="18" requeired>
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Sigilo</legend>
+            <p>
+                <label for="ipass">Senha:</label>
+                <input type="password" name="pass" id="ipass" required minlength="6" maxlength="20">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Tempo</legend>
+            <p>
+                <label for="imes">Mês que nasceu</label>
+                <input type="month" name="mes" id="imes" requeired>
+            </p>
+            <p>
+                <label for="idata">Data</label>
+                <input type="date" name="data" id="idata" requeired>
+            </p>
+            <p>
+                <label for="itime">Horário que nasceu</label requeired>
+                <input type="time" name="time" id="itime">
+            </p>
+        </fieldset>
+
+        <fieldset>
+
+            <p>
+                <legend>Esporte Favorito</legend>
+                <label for="ibas"><input type="checkbox" name="espbas" id="ibas" checked> Basquete <br></label>
+                <label for="ifut"><input type="checkbox" name="espfut" id="ifut"> Futebol <br></label>
+                <label for="iten"><input type="checkbox" name="espten" id="iten"> Tenis <br></label>
+                <label for="ivol"><input type="checkbox" name="espvol" id="ivol"> Volei <br></label>
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Informe sexo</legend>
+            <p>
+                <label for="imas"><input type="radio" name="sexo" id="imas" checked> Masculino</label>
+                <label for="ifem"><input type="radio" name="sexo" id="ifem"> Feminino</label>
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Cor favorita</legend>
+            <p><label for="icor">Escolha sua Cor:  <input type="color" name="cor" id="icor"></label></p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Pesquisa de satisfação</legend>
+                <p>Por favor, informe quão satisfeito ficou com nosso atendimento! <br> <label for="inota"><input type="range" name="nota" id="inota" min="1" max="5"></label></p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Escolha sua foto de perfil</legend>
+            <p>
+                <label for="ifoto">Foto de perfil    <input type="file" name="foto" id="ifoto"></label>
+            </p>
+        </fieldset>
+
+        <p>
+            <label for="iest">Escolha seu estadao</label>
+            <select name="estado" id="iest">
+                <optgroup label="Teste 01">
+                    <option value="PR">Paraná</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+                <optgroup label="Teste 02">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Informe sua profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof" placeholder="Caso não ache sua profissão, pode escrever!" size="40">
+            <datalist id="lstprof">
+                <option>Administrador</option>
+                <option>Advogado</option>
+                <option>Agente do FBI</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Sugestões ou dúvidas <br><textarea name="msg" id="imsg" placeholder="Escreva sua mensagem aqui..." cols="60" rows="15" style="resize: none;"></textarea></label>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+</body>
+</html>
