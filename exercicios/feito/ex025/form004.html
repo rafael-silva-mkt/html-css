@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required>
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" required placeholder="Informe seu E-mail" autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" placeholder="(xx)xxxxx-xxxx" required pattern="\(d{2}\)\d{4,5} - \d{4}$">
+                <!-- Utilizamos o contrabarra para começar nosso pattern.
+                    d <- é referente a digitos, podemos escrever também [0,9] <- para informar que aceitamos números de
+                    1 até 9
+                    d {números} <- Quando temos d e {} estamos informando a quantidade de números que aquela parte deve aceitar.
+                    Como colocamos o traço no exemplo acima, informamos que antes aceitamos 4 ou 5 números e depois do traço,
+                    4 números.
+                -->
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>
