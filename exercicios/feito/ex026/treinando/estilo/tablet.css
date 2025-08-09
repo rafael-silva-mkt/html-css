@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/* ======================================= */
+/*                  TABLET                 */
+/* ======================================= */
+
+header{
+    height: clamp(180px, 25vw, 200px)
+}
+
+header h1{
+    padding-top: 30px;
+    font-size: clamp(2em, 7vw, 2.8em);
+}
+header p{
+    max-width: 380px;
+}
+
+main h1{
+    display: inline-block;
+    padding: 8px;
+}
+
+main h2{
+    text-align: left;
+}
+
+nav{
+    text-align: left;
+    padding: 10px;
+}
