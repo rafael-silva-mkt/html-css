@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        body{
+            background-color: darkgray;
+        }
+        div.container{
+            background-color: lightcoral;
+
+            display: flex;
+            flex-flow: row wrap;
+        }
+        div.item{
+            background-color: red;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">AA</div>
+        <div class="item">BBBB</div>
+        <div class="item">CCCCCCCCCCC</div>
+        <div class="item">D</div>
+        <div class="item">EEE</div>
+        <div class="item">GFDQF</div>
+        <div class="item">G</div>
+    </div>
+    <!-- 
+    
+    Configuração para os elementos filho...
+
+    flex-shrink: 1 <- Sinaliza para o navegador que o elemento pode encolher...
+    flex-shrink: 0 <- Sinaliza que não pode encolher... Qualquer número maior que zero significa que pode encolher.
+
+    flex-grow: 0 <- Sinaliza que não pode crescer...
+    flex-grow: 1 <- Sinaliza que os elementos podem crescer...
+
+    
+
+    -->
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        body{
+            background-color: darkgray;
+        }
+        div.container{
+            background-color: lightcoral;
+
+            display: flex;
+            flex-flow: row wrap;
+
+        }
+        div.item{
+            background-color: red;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+        }
+        div#i1{
+            order: 1;
+        }
+        div#i2{
+            order: -5;
+        }
+        div#i3{
+            order: 4;
+        }
+        div#i4{
+            order:6;
+        }
+        div#i5{
+            order: 3;
+        }
+        div#i6{
+            order: -7;
+        }
+        div#i7{
+            order: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+        <div class="item" id="i6">F</div>
+        <div class="item" id="i7">G</div>
+    </div>
+    <!-- 
+    
+    align-self -> Não serve para o container pai, apenas para alinhamento do container filho.
+
+    align-self -> Funciona diretamente no cross-axis para configurar elementos especificos.
+
+    align-self: auto -> Vai herdar as caracteristicas do contaner pai.
+
+    align-self: flex-start -> Colocado no cross-start
+
+    align-self: flex-end -> Alinhado no cross-end
+
+    align-self: center -> Alinha o elemento
+
+    align-self: stretch -> Adapta o elemento para caber no container.
+
+    -->
+</body>
+</html>
