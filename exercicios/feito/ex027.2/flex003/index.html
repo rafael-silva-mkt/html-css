@@ -9,35 +9,57 @@
             background-color: darkgray;
         }
         div.container{
-            background-color: lightcoral;
-            display: flex;
-            flex-flow: row wrap-reverse;
+            background-color: lightcoral;  
+
+            display: flex;    
+            flex-flow: row wrap;
         }
         div.item{
-            background-color: red;
+            background-color: rgb(255, 0, 0);
             border: 1px solid black;
             text-align: center;
             padding: 10px;
             flex: auto;
+            /* flex: auto -> Utilizamos dentro do elemento filho.
+            Não permite que tenha espaço em branco dentro do elemento pai.*/
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item">Exemplo de Bloco A</div>
-        <div class="item">Exemplo de Bloco B</div>
-        <div class="item">Exemplo de Bloco C</div>
-        <div class="item">Exemplo de Bloco D</div>
-        <div class="item">Exemplo de Bloco E</div>
-        <div class="item">Exemplo de Bloco F</div>
-        <div class="item">Exemplo de Bloco G</div>
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div>
     </div>
     <!-- 
-    Flex-direction
-    flex-direction: row -> sentido de leitura, esquerda para direita.
-    flex-direction: row-reverse -> sentido contrário, direita para esquerda.
-    flex-direction: column -> Organiza as caixas em coluna, sentido de cima para baixo.
-    flex-direction: column-reverse -> sentido contrário, de baixo para cima.
+    Quando falamos de flexbox, precisamos entender que o container pai é o que vai determinar o comportamento do container filho.
+
+    justify-content -> Faz o alinhamento de acordo com o main-axis (eixo-principal)
+
+    justify-content: flex-start -> Significa que ele vai pegar o main-start do elemento pai, e vai "grudar" o primeiro item nesse 
+    main-start e caso exista um espaço livre no container pai, o espaço livre sempre ficará no final do container, mais próximo ao
+    main-end.
+
+    justify-content: flex-end -> O último item ficará "grudado" no main-end e o espaçamento vai estar do lado do main-start do elemento pai.
+
+    justify-content: center -> Calcula exatamente o centro do container pai, e vai agrupar todos os itens no centro... Dessa forma o espaço
+    em branco que sobrar, serão distribuidos igualmente no main-start e main-end...
+
+    justify-content: space-between -> Vai posicionar o primeiro container no main-start e o último container no main-end, o restante dos itens
+    estão alinhados ao meio com um espaçamento igual entre eles.
+
+    justify-content: space-evenly -> Vai distribuir os elementos dentro do container pai de uma forma que antes depois dos itens, nós vamos
+    ter espaçamentos iguais entre todos os elementos dentro do container pai.
+
+    justify-content: space-around -> Fará uma analise de quantos elementos o container pai vai receber, depois, analisar o espaço útil dentro
+    desse container, dividir esse container em espaços iguais (a quantidade de espaços que ele vai dividir, está diretamente relacionada a 
+    quantidade de container filho que teremos.) e com esses espaços iguais, ele vai centralizar cada elemento dentro desses espaços criados
+    pela divisão.
+
     -->
 </body>
 </html>

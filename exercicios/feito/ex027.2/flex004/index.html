@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        body{
+            background-color: darkgray;
+        }
+        div.container{
+            background-color: lightcoral;
+            height: 300px;
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: stretch;
+        }
+        div.item{
+            background-color: red;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <!-- 
+    *Align-items -> Alinhamento no sentido cross-axis! Ou seja, resolvemos espaçamentos no sentido do cross-axis, diferente do justify
+    que resolve espaçamentos no sentido main-axis.
+
+    align-items: stretch -> Aumentando o cross-axis, por padrão vamos esticar nossos elementos para se adaptarem ao tamanho do container.
+
+    align-items: flex-start -> Faz com que os elementos dentro do container pai se alinhem no começo do cross-axis.
+
+    align-items: flex-end -> Faz os elementos colarem no cross-end.
+
+    align-items: center -> Centraliza os elementos.
+
+    -->
+</body>
+</html>
