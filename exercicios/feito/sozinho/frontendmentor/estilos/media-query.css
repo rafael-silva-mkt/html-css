@@ -1,28 +1,66 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 631px) and (min-height: 600px){
+/* ============================================================================== */
+/*                                    LANDSCAPE                                   */
+/* ============================================================================== */
+
+@media screen and (orientation: landscape) and (max-height: 550px){
 
     main{
-        width: 90vw;
-        max-width: 700px;
-        height: 60vh;
-        max-height: 600px;
+        height: 300px;
+        width: clamp(500px, 90vw, 550px);
     }
-    section#photo{
+    main > section#photo{
+        float: left;
+        width: 40%;
+        height: 100%;
+        background: url('../imagens/perfume-chanel-300.jpg') center center/cover;
+    }
+    main > section#copy{
+        float: right;
+        width: 60%;
+        height: 100%;
+        padding: 5px 10px;
+    }
+    main > section#copy > h1{
+        font-size: 1.2em;
+    }
+    main > section#copy > h2{
+        font-size: 1.5em;
+    }
+    main > section#copy > p{
+        font-size: 0.9em;
+    }
+    main > section#copy > div.prices > data{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 768px) and (min-height: 551px){
+
+    main{
+        width: clamp(750px, 90vw, 825px);
+        height: 500px
+    }
+    main > section#photo{
         float: left;
         width: 50%;
         height: 100%;
-        background: url('../imagens/perfume-chanel.jpg') top center/cover no-repeat;
+        background: url('../imagens/perfume-chanel.jpg') center center/cover;
     }
-    section#copy{
+    main > section#copy{
         float: right;
         width: 50%;
         height: 100%;
-        padding: 10px;
-
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
-        gap: 10px;
     }
+    main > section#copy > h2{
+        padding-bottom: 20px;
+    }
+    main > section#copy > p{
+        padding-bottom: 20px;
+    }
+
 }

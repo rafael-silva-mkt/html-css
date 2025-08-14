@@ -14,12 +14,13 @@
 
 body{
     background-color: var(--cor01);
+    min-height: 100vh;
+    width: 100%;
+    overflow: auto;
 
     display: flex;
-    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 /*                                    # root #                                    */
@@ -37,77 +38,69 @@ body{
 /*                                    # main #                                    */
 
 main{
-    height: 500px;
-    width: 300px;
+    height: 550px;
+    width: clamp(250px, 90vw, 300px);
+    border-radius: 15px;
     overflow: hidden;
-    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px black;
 }
-
-/* ================================== # fim # =================================== */
-
-/*                                    # section photo #                                    */
-
-section#photo{
+main > section#photo{
     height: 40%;
     width: 100%;
     background: url('../imagens/perfume-chanel-300.jpg') center center/contain;
 }
-
-/* ================================== # fim # =================================== */
-
-/*                                    # section photo #                                    */
-
-section#copy{
+main > section#copy{
     height: 60%;
     width: 100%;
     background-color: white;
-    padding: 5px;
+    padding: 15px;
 }
-section#copy > h1{
+main > section#copy > h1{
     font-family: var(--font-mont);
-    font-variant: small-caps;
     font-weight: 400;
-    font-size: 1.0em;
+    font-variant: small-caps;
     letter-spacing: 4px;
 }
-section#copy h2{
-    font-size: 1.9em;
-    font-weight: bolder;
-    font-family: var(--font-fraunces)
-}
-section#copy p{
-    font-family: var(--font-mont);
-    padding: 5px;
-}
-section#copy > div.precos > data{
-    display: inline-block;
+main > section#copy > h2{
     font-family: var(--font-fraunces);
-    font-size: 1.7em;
-    color: #016101;
-    font-weight: bolder;
-    margin: 10px 0px 10px 15px;
+    padding: 10px 0px;
 }
-section#copy > div.precos p.discount{
-    display: inline-block;
-    text-decoration: line-through;
-    font-size: 0.8em;
+main > section#copy > p{
+    font-family: var(--font-mont);
 }
-section#copy > a{
-    text-decoration: none;
-    color: white;
-    background-color: #016101;
-    font-size: 0.8em;
-    padding: 8px;
-    border-radius: 8px;
-    margin: 1px 15px;
-
+main > section#copy > div.prices{
     display: flex;
-    justify-content: center;
+    flex-flow: row nowrap;
     align-items: center;
 }
-section#copy > a:hover{
-    background-color: lightgreen;
-    color: #016101;
-    transition: background-color .5s;
+main > section#copy > div.prices > data{
+    font-family: var(--font-fraunces);
+    color: green;
+    font-weight: bolder;
+    font-size: 2em;
+    margin-right: 25px;
+    padding: 8px 0px;
+}
+main > section#copy > div.prices > p.discount{
+    text-decoration: line-through;
+}
+main > section#copy > a{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: var(--font-roboto);
+}
+main > section#copy > a:hover{
+    background-color: rgb(255, 196, 46);
+    color: green;
+    font-weight: bolder;
 }
 /* ================================== # fim # =================================== */
