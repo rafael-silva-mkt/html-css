@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+/* ============================================================================== */
+/*                                     MOBILE                                     */
+/* ============================================================================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+}
+
+/*                                    # root #                                    */
+
+:root{
+    --cor01: #E9EEF2;
+    --cor02: #73B2D9;
+    --cor03: #3E688C;
+    --cor04: #142740;
+    --cor05: #071526;
+
+    --font-texto: 'Montserrat';
+    --font-fraunces: 'Fraunces';
+    --font-bebas: 'Bebas Neue';
+    --font-play: 'Playfair Display SC';
+}
+
+/* ================================== # fim # =================================== */
+
+/*                                    # header #                                    */
+
+header{
+    background-color: #071526;
+    height: clamp(120px, 20vh, 150px);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: var(--font-play);
+}
+header > h1{
+    font-variant: small-caps;
+}
+header > p{
+    font-size: 0.8em;
+}
+
+/* ================================== # fim # =================================== */
+
+/*                                    # main #                                    */
+
+main{
+    background-color: antiquewhite;
+    min-height: 90vh;
+    width: 100%;
+    overflow: auto;
+}
+
+/* ================================== # fim # =================================== */
+
+/*                                    # section catalogue #                                    */
+
+section#catalogue {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* ================================== # fim # =================================== */
+
+/*                                    # article perfume #                                    */
+
+section#catalogue > article.perfume{
+    height: clamp(430px, 80vh,450px);
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px 1px black;
+}
+section#catalogue > article.perfume > div.photo{
+    height: 43%;
+    width: 100%;
+    background: url('../imagens/perfume-chanel.jpg') center 27% /cover;
+    background-size: cover;
+}
+section#catalogue > article.perfume > div.copy{
+    height: 57%;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+}
+section#catalogue > article.perfume > div.copy > h2{
+    font-family: var(--font-texto);
+    font-weight: 400;
+    font-variant: small-caps;
+    letter-spacing: 4px;
+    font-size: 1.3em;
+    padding: 5px;
+}
+section#catalogue > article.perfume > div.copy > h1{
+    font-family: var(--font-fraunces);
+    font-size: 1.4em;
+}
+section#catalogue > article.perfume1 > div.copy > p{
+    font-family: var(--font-fraunces);
+    font-size: 0.9em;
+}
+section#catalogue > article.perfume > div.copy > div.price{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px;
+}
+section#catalogue > article.perfume > div.copy > div.price > data{
+    font-family: var(--font-fraunces);
+    font-weight: bolder;
+    color: #027A48;
+    font-size: 1.5em;
+    margin-right: 25px;
+    padding-left: 20px;
+}
+section#catalogue > article.perfume > div.copy > div.price > span{
+    text-decoration: line-through;
+    font-size: 0.8em;
+    align-self: flex-end;
+}
+section#catalogue > article.perfume > div.copy > div.button{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+section#catalogue > article.perfume > div.copy > div.button > a{
+    background-color: #027A48;
+    color: white;
+    padding: 5px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-family: var(--font-texto);
+    font-size: 0.8em;
+    font-weight: bolder;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section#catalogue > article.perfume > div.copy > div.button > a.info{
+    background-color: var(--cor04);
+    text-shadow: 1px 1px 5px black;
+    margin-left: 10px;
+}
+section#catalogue > article.perfume > div.copy > div.button > a:hover{
+    background-color: #03A65A;
+    box-shadow: 0 4px 15px rgba(3, 166, 90, 0.4);
+    transform: translateY(-2px);
+}
+section#catalogue > article.perfume > div.copy > div.button > a.info:hover{
+    background-color: var(--cor02);
+    box-shadow: 0px 4px 15px var(--cor04);
+}  
+/* ================================== # fim # =================================== */
