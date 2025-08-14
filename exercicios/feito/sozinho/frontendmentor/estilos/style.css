@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ============================================================================== */
+/*                                     MOBILE                                     */
+/* ============================================================================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--cor01);
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/*                                    # root #                                    */
+
+:root{
+    --cor01: #dacabd;
+
+    --font-mont: 'Montserrat';
+    --font-roboto: 'Roboto';
+    --font-fraunces: 'Fraunces';
+}
+
+/* ================================== # fim # =================================== */
+
+/*                                    # main #                                    */
+
+main{
+    height: 500px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* ================================== # fim # =================================== */
+
+/*                                    # section photo #                                    */
+
+section#photo{
+    height: 40%;
+    width: 100%;
+    background: url('../imagens/perfume-chanel-300.jpg') center center/contain;
+}
+
+/* ================================== # fim # =================================== */
+
+/*                                    # section photo #                                    */
+
+section#copy{
+    height: 60%;
+    width: 100%;
+    background-color: white;
+    padding: 5px;
+}
+section#copy > h1{
+    font-family: var(--font-mont);
+    font-variant: small-caps;
+    font-weight: 400;
+    font-size: 1.0em;
+    letter-spacing: 4px;
+}
+section#copy h2{
+    font-size: 1.9em;
+    font-weight: bolder;
+    font-family: var(--font-fraunces)
+}
+section#copy p{
+    font-family: var(--font-mont);
+    padding: 5px;
+}
+section#copy > div.precos > data{
+    display: inline-block;
+    font-family: var(--font-fraunces);
+    font-size: 1.7em;
+    color: #016101;
+    font-weight: bolder;
+    margin: 10px 0px 10px 15px;
+}
+section#copy > div.precos p.discount{
+    display: inline-block;
+    text-decoration: line-through;
+    font-size: 0.8em;
+}
+section#copy > a{
+    text-decoration: none;
+    color: white;
+    background-color: #016101;
+    font-size: 0.8em;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 1px 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section#copy > a:hover{
+    background-color: lightgreen;
+    color: #016101;
+    transition: background-color .5s;
+}
+/* ================================== # fim # =================================== */

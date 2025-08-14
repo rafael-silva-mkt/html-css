@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 631px){
+
+    main{
+        width: 90vw;
+        max-width: 700px;
+        height: 60vh;
+        max-height: 600px;
+    }
+    section#photo{
+        float: left;
+        width: 50%;
+        height: 100%;
+        background: url('../imagens/perfume-chanel.jpg') top center/cover no-repeat;
+    }
+    section#copy{
+        float: right;
+        width: 50%;
+        height: 100%;
+        padding: 10px;
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        gap: 10px;
+    }
+}
