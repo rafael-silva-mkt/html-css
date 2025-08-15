@@ -1,0 +1,11 @@
+{
+    "editor.fontSize": 14,
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.lineHeight": 1.8,
+    "editor.fontLigatures": true,
+    "workbench.editor.labelFormat": "short",
+    "explorer.compactFolders": false,
+    "editor.scrollbar.vertical": "hidden",
+    "editor.scrollbar.horizontal": "hidden",
+}
+
