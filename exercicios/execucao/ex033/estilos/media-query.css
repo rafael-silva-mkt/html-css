@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/* ============================================================================== */
+/*                                   lANDSCAPE                                    */
+/* ============================================================================== */
+
+@media screen and (orientation: landscape) and (max-height: 490px){
+
+    header{
+        height: 100px;
+    }
+    section#catalogo > article.container{
+        width: 500px;
+        height: 300px;
+
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    section#catalogo > article.container > div.photo{
+        flex: 0 0 40%;
+    }
+    section#catalogo > article.container > div.copy{
+        flex: auto;
+    }
+}
+
+@media screen and (min-width: 768px){
+
+    section#catalogo{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+}

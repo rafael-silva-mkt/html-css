@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+/* ============================================================================== */
+/*                                     MOBILE                                     */
+/* ============================================================================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*                                    # root #                                    */
+
+:root{
+    --font-montserrat: 'Montserrat';
+    --font-fraunces: 'Fraunces';
+    --font-bebas: 'Bebas Neue';
+    --font-playfair: 'Playfair Display SC';
+
+    --cor-background: antiquewhite;
+    --cor01: #94BCD6;
+    --cor02: #84A9D5;
+    --cor03: #102540;
+}
+
+/* ================================== # fim # =================================== */
+
+/*                                    # header #                                    */
+
+header{
+    background-color: var(--cor03);
+    height: clamp(110px, 20vh, 160px);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+header > h1{
+    color: white;
+    font-family: var(--font-playfair);
+    text-align: center;
+    font-variant: small-caps;
+}
+
+/* ================================== # fim # =================================== */
+
+/*                                    # main #                                    */
+
+main{
+    min-height: 100vh;
+    width: 100%;
+    overflow: auto;
+}
+section#catalogo{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;  
+}
+/* ================================== # fim # =================================== */
+
+/*                                    # article #                                    */
+
+article.container{
+    height: 475px;
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 1px black;
+    margin-top: 15px;
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+article.container > div.photo{
+    flex: 0 0 40%;
+    background: url('../imagens/perfume-chanel.jpg') center 25%/cover;
+    
+}
+article.container > div.copy{
+    flex: auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    gap: 5px;
+    padding: 10px;
+}
+article.container > div.copy > div.text > h3{
+    font-family: var(--font-montserrat);
+    font-variant: small-caps;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+article.container > div.copy > div.text > h2{
+    font-family: var(--font-fraunces);
+    padding: 7px 0px;
+}
+article.container > div.copy > div.text > p{
+    font-family: var(--font-montserrat);
+    font-size: 0.9em;
+}
+article.container > div.copy > div.price > data{
+    font-family: var(--font-fraunces);
+    font-weight: bolder;
+    font-size: 1.7em;
+    color: #027A48;
+    margin: 0px 15px;
+}
+article.container > div.copy > div.button{
+    align-self: center;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+article.container > div.copy > div.button > button{
+    background-color: #027A48;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    margin-right: 20px;
+    cursor: pointer;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+article.container > div.copy > div.button > button:hover{
+    box-shadow: 0px 0px 10px 1px #03bd6f;
+    transform: translateY(-2px);
+}
+article.container > div.copy > div.button > a{
+    background-color: var(--cor02);
+    text-shadow: 0px 0px 5px black;
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+article.container > div.copy > div.button > a:hover{
+    box-shadow: 0px 0px 10px 1px var(--cor03);
+    transform: translateY(-2px);
+}
+/* ================================== # fim # =================================== */
