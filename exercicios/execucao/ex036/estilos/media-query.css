@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+/* ============================================================================== */
+/*                               LANDSCAPE MOBILE                                 */
+/* ============================================================================== */
+
+@media screen and (orientation: landscape) and (max-height: 600px){
+
+    header{
+        height: 100px;
+    }
+    article.perfume{
+        height: 300px;
+        width: 500px;
+    }
+    article.perfume > div.photo{
+        float: left;
+        width: 50%;
+        height: 100%;
+        background: url('../imagens/perfume-rosa.jpg') center center/contain;
+    }
+    article.perfume > div.copy{
+        float: right;
+        width: 50%;
+        height: 100%;
+        margin-top: 0;
+    }
+    article.perfume > div.copy > div.price{
+        margin-bottom: 5px;
+    }
+    article.bag{
+        height: 300px;
+        width: 500px;
+    }
+    article.bag > div.photo{
+        float: left;
+        width: 50%;
+        height: 100%;
+        background: url('../imagens/bolsa-chanel.webp') center center/contain;
+    }
+    article.bag > div.copy{
+        float: right;
+        width: 50%;
+        height: 100%;
+        margin-top: 0;
+    }
+    article.bag > div.copy > div.price{
+        margin-bottom: 5px;
+    }
+}
+
+/* ============================================================================== */
+/*                                  WIDTH: 800PX                                  */
+/* ============================================================================== */
+
+@media screen and (min-width: 800px) and (min-height: 601px){
+
+    section#page{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+}

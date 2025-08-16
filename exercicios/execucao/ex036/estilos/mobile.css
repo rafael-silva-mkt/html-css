@@ -1,0 +1,246 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+/* ============================================================================== */
+/*                                     MOBILE                                     */
+/* ============================================================================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: antiquewhite;
+    min-height: 100vh;
+    width: 100%;
+    overflow: auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/*                                    # root #                                    */
+
+:root{
+    --cor01: #00E592;
+    --cor02: #009961;
+    --cor03: #00774B;
+    --cor04: #005536;
+
+    --font-bebas: 'Bebas Neue';
+    --font-fraunces: 'Fraunces';
+    --font-mont: 'Montserrat';
+    --font-play: 'Playfair Display SC';
+}
+
+/* ================================== # fim # =================================== */
+
+/*                                    # root #                                    */
+
+header{
+    background-color: rgb(13,13,20);
+    color: white;
+    font-family: var(--font-play);
+    height: clamp(110px, 20vh, 160px);
+    width: 100%;
+    text-align: center;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ================================== # fim # =================================== */
+
+/*                                    # nav #                                    */
+
+nav{
+    background-color: #222429;
+    padding: 10px;
+
+    flex: 0 0 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+nav > a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-family: var(--font-play);
+    font-weight: bolder;
+    border-radius: 5px;
+    
+}
+nav > a:hover{
+    color: black;
+    font-weight: bolder;
+    background-color: rgb(75,82,92);
+    transition: background-color 0.4s;
+}
+
+/* ================================== # fim # =================================== */
+
+/*                                    # main #                                    */
+
+main{
+    flex: 1;
+}
+
+/* ================================== # fim # =================================== */
+
+/*                                # section#page #                                */
+
+section#page{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+/* ================================== # fim # =================================== */
+
+/*                               # article.perfume #                               */
+
+article.perfume{
+    height: 500px;
+    width: 300px;
+    background-color: white;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 1px black;
+    margin-bottom: 20px;
+}
+article.perfume > div.photo{
+    height: 40%;
+    width: 100%;
+    background: url('../imagens/perfume-rosa.jpg') center center/cover;
+}
+article.perfume > div.copy{
+    margin-top: 15px;
+    height: 57%;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+article.perfume > div.copy > div.text > h3{
+    font-family: var(--font-fraunces);
+    font-variant: small-caps;
+    letter-spacing: 5px;
+    margin-bottom: 7px;
+}
+article.perfume > div.copy > div.text > h2{
+    font-family: var(--font-fraunces);
+    margin-bottom: 7px;
+}
+article.perfume > div.copy > div.text > p{
+    font-family: var(--font-mont);
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+article.perfume > div.copy > div.price{
+    margin-left: 10px;
+    margin-bottom: 12px;
+}
+article.perfume > div.copy > div.price > data{
+    font-family: var(--font-fraunces);
+    color: #00774B;
+    font-size: 1.6em;
+    font-weight: bolder;
+}
+article.perfume > div.copy > div.button > button{
+    background-color: #00774B;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+article.perfume > div.copy > div.button > button:hover{
+    background-color: #00E592;
+    color: #005536;
+    font-weight: bolder;
+    box-shadow: 0px 0px 5px #00E592;
+    cursor: pointer;
+}
+/* ================================== # fim # =================================== */
+
+/*                                # article.bag #                                 */
+
+article.bag{
+    height: 500px;
+    width: 300px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 1px black;
+}
+article.bag > div.photo{
+    height: 40%;
+    width: 100%;
+    background: url('../imagens/bolsa-chanel.webp') center center/cover;
+}
+article.bag > div.copy{
+    height: 60%;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+article.bag > div.copy > div.text > h3{
+    font-family: var(--font-fraunces);
+    font-variant: small-caps;
+    letter-spacing: 5px;
+    margin-bottom: 7px;
+}
+article.bag > div.copy > div.text > h2{
+    font-family: var(--font-fraunces);
+    margin-bottom: 7px;
+}
+article.bag > div.copy > div.text > p{
+    font-family: var(--font-mont);
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+article.bag > div.copy > div.price{
+    margin-left: 10px;
+    margin-bottom: 8px;
+}
+article.bag > div.copy > div.price > data{
+    font-family: var(--font-fraunces);
+    color: #00774B;
+    font-size: 1.6em;
+    font-weight: bolder;
+}
+article.bag > div.copy > div.button > button{
+    background-color: #00774B;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+article.bag > div.copy > div.button > button:hover{
+    background-color: #00E592;
+    color: #005536;
+    font-weight: bolder;
+    box-shadow: 0px 0px 5px #00E592;
+    cursor: pointer;
+}
+/* ================================== # fim # =================================== */
